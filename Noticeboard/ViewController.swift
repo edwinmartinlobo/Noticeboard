@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableview:UITableView!
     
+     var posts = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.delegate = self
@@ -26,9 +28,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        if let cell = tableView.dequeueReusableCellWithIdentifier("Postcell") as? Postcell {
+        
+        
+        }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 90.5
+    }
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        posts.count
     }
 }

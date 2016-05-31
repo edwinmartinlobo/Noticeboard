@@ -16,6 +16,7 @@
 		E872747D1CF8A8090051C283 /* NoticeboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E872747C1CF8A8090051C283 /* NoticeboardTests.swift */; };
 		E87274881CF8A8090051C283 /* NoticeboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87274871CF8A8090051C283 /* NoticeboardUITests.swift */; };
 		E87274971CF8AFAE0051C283 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87274961CF8AFAE0051C283 /* post.swift */; };
+		E872749A1CFDDD2B0051C283 /* Postcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87274991CFDDD2B0051C283 /* Postcell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E87274871CF8A8090051C283 /* NoticeboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeboardUITests.swift; sourceTree = "<group>"; };
 		E87274891CF8A8090051C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E87274961CF8AFAE0051C283 /* post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
+		E87274991CFDDD2B0051C283 /* Postcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Postcell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +137,17 @@
 			isa = PBXGroup;
 			children = (
 				E87274961CF8AFAE0051C283 /* post.swift */,
+				E87274981CFDDCEF0051C283 /* View */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E87274981CFDDCEF0051C283 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E87274991CFDDD2B0051C283 /* Postcell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			files = (
 				E87274671CF8A8090051C283 /* ViewController.swift in Sources */,
 				E872746D1CF8A8090051C283 /* Noticeboard.xcdatamodeld in Sources */,
+				E872749A1CFDDD2B0051C283 /* Postcell.swift in Sources */,
 				E87274651CF8A8090051C283 /* AppDelegate.swift in Sources */,
 				E87274971CF8AFAE0051C283 /* post.swift in Sources */,
 			);
@@ -498,6 +510,7 @@
 				E872748E1CF8A8090051C283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E872748F1CF8A8090051C283 /* Build configuration list for PBXNativeTarget "NoticeboardTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				E87274911CF8A8090051C283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E87274921CF8A8090051C283 /* Build configuration list for PBXNativeTarget "NoticeboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				E87274941CF8A8090051C283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

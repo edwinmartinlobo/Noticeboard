@@ -39,7 +39,7 @@
                                 <rect key="frame" x="20" y="76" width="560" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="eJ3-4P-1sL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Postcell" rowHeight="91" id="eJ3-4P-1sL" customClass="Postcell" customModule="Noticeboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eJ3-4P-1sL" id="azn-8m-U8u">
@@ -84,6 +84,11 @@
                                                 <constraint firstItem="iJX-Z4-JFV" firstAttribute="trailing" secondItem="azn-8m-U8u" secondAttribute="trailingMargin" id="wVz-K2-hDk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Desclabel" destination="hP0-9x-2cv" id="S66-NR-OUv"/>
+                                            <outlet property="posimg" destination="RCq-8r-bzt" id="PTe-Ss-IAv"/>
+                                            <outlet property="title" destination="iJX-Z4-JFV" id="Emo-Ui-SoV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
